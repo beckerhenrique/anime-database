@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+*{
+  margin: 0;
+}
+#cardSection{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: space-evenly;
+  padding: 2em;
+}
+.animeCard{
+  border: 1px solid black;
+  width: 250px;
+  height: 260px;
+  padding: 1em;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  border-radius: 25px;
+}
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+  margin: 0;
+  padding: 1em;
+  font-family: Smokum, sans-serif;
+  background-color: rgb(223, 232, 255);
+}
+#searchArea{
+  display: flex;
+  gap: 10px;
+}
+.cardImg{
+  width: 150px;
+  height: 150px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.animeTitle{
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  height: 36px;
+  padding: 5px;
+}
+#containers{
+  display: flex;
+  gap: 2em;
+  justify-content: center;
+  flex-direction: row;
+
+}
+#popup{
+  padding: 1em;
+  padding-top: 0;
+  background-color: rgb(42, 42, 42);
+  color: white;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+#popupHeader button{
+  width: 30px;
+  height: 30px;
+  background-color: antiquewhite;
+  border: none;
+  position: relative;
+  left: 40em;
+  transition: 1s;
+}
+#popupHeader h1{
+  padding-bottom: 1em;
+}
+#popupHeader button:hover{
+  border: 1px solid red;
+  cursor: pointer;
+  color: red;
+}
+#animeClassification{
+  border: 1px solid white;
+  padding: 2em;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2em;
+}
+#animeClassification div{
+  display: flex;
+  text-align: end;
+  align-items: end;
+  gap: 5px;
+}
+#animeDescription{
+  border: 1px solid white;
+  padding: 2em;
+  border-radius: 25px;
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+#animeClassification img{
+  height: 300px;
+}
+#popupHeader{
+  display: flex;
+}
+.animeCard:hover{
+  cursor: pointer;
+  border-left: 2px solid rgb(2, 74, 255);
+  border-bottom: 2px solid rgb(2, 74, 255);
+}
+@media (max-width: 1000px){
+  #popup{
+    height: 100%;
+  }
+  #containers{
+    flex-wrap: wrap;
+  }
+  #animeDescription{
+    max-width: 800px;
+  }
+}
+@media (max-width: 410px){
+  #animeGenres{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
